@@ -17,3 +17,15 @@ list2 = [1,66,4,65,0]
 print("orginal list:", list2)
 print(bubble_sort(list2))
 print(bubble_sort([]))
+
+##fiding min element 
+def min_find(arr):
+    min_element = 1000000
+    for i in arr:
+        if i < min_element:
+            min_element = i
+
+    return min_element
+my_list = [1,2,45,33,234,532,3,1,9]        
+print(f"List: {my_list}\nMin Element: {min_find(my_list)}")
+
